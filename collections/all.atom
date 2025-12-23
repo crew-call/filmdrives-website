@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://filmdrives.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://filmdrives.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://filmdrives.com/collections/all.atom"/>
+  <title>Film Drives</title>
+  <updated>2022-01-15T13:11:04+11:00</updated>
+  <author>
+    <name>Film Drives</name>
+  </author>
+  <entry>
+    <id>https://filmdrives.com/products/6630637830199</id>
+    <published>2022-01-15T13:11:04+11:00</published>
+    <updated>2022-01-15T13:11:04+11:00</updated>
+    <link rel="alternate" type="text/html" href="https://filmdrives.com/products/2tb-nvme-ssd-1"/>
+    <title>2TB NVME SSD</title>
+    <s:type>Solid State Drives</s:type>
+    <s:vendor>The Vision House</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/2691/1130/products/FD_2TB_NVME_ProductPage_05_831276d9-8c18-42b9-857f-99f65350f170.jpg?v=1642212675"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Vision House<br>
+        <strong>Type: </strong>Solid State Drives<br>
+        <strong>Price: </strong>
+            549.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p data-mce-fragment="1">The Film Drives '2TB NVME SSD' is a portable, on-set solid state drive that delivers consistent offload speeds. Utilising under clocked NVMe Storage alongside a superior thermal design allows for all day backups without compromise.</p>
+<p data-mce-fragment="1">The Film Drives '<meta charset="utf-8"><span data-mce-fragment="1">2TB NVME SSD</span>' boasts 960MB/s Write Speeds and 950MB/s Read Speeds. For maximum performance it comes equipped with a USB-C Port to leverage the faster speeds offered by USB 3.2 Gen 2. Compatible with Thunderbolt 3/4 Ports as well as older USB-A Ports (via a USB-C to USB-A Cable).</p>
+<p data-mce-fragment="1">Set the new standard of professionalism with our SSD Labelling System. Use the<span data-mce-fragment="1"> </span><a data-mce-fragment="1" href="https://filmdrives.com/pages/label-maker" title="Label Maker App" data-mce-href="https://filmdrives.com/pages/label-maker">Film Drives 'Label Maker' App</a><span data-mce-fragment="1"> </span>to quickly generate unique SSD Labels for every job. The big, easy to read labels simply slide into the plastic pouch built into every Film Drives Case. Stick the second label on the drive itself and stay super organised.</p>
+<p data-mce-fragment="1">With the Film Drives 'Set Ready Protective Case' your pack down will be quick, your cables will be organised and your data will be safe. Housing your rushes in the durable case trumps a cardboard box any day, shield your production while in transit and ensure safe end-to-end delivery for you and your client.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>FD_NVME_2TB</s:tag>
+    <s:variant>
+      <id>https://filmdrives.com/products/6630637830199</id>
+      <title>Local Pickup at The Vision House (Melbourne)</title>
+      <s:price currency="AUD">549.00</s:price>
+      <s:sku>FD_NVME_2TB_TVH</s:sku>
+      <s:grams>285</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://filmdrives.com/products/6629886394423</id>
+    <published>2022-01-13T10:23:11+11:00</published>
+    <updated>2022-01-13T10:23:11+11:00</updated>
+    <link rel="alternate" type="text/html" href="https://filmdrives.com/products/2tb-nvme-ssd"/>
+    <title>2TB NVME SSD</title>
+    <s:type>Solid State Drives</s:type>
+    <s:vendor>Film Drives</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/2691/1130/products/FD_2TB_NVME_ProductPage_05.jpg?v=1642063954"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Film Drives<br>
+        <strong>Type: </strong>Solid State Drives<br>
+        <strong>Price: </strong>
+            549.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p data-mce-fragment="1">The Film Drives '2TB NVME SSD' is a portable, on-set solid state drive that delivers consistent offload speeds. Utilising under clocked NVMe Storage alongside a superior thermal design allows for all day backups without compromise.</p>
+<p data-mce-fragment="1">The Film Drives '<meta charset="utf-8"><span data-mce-fragment="1">2TB NVME SSD</span>' boasts 960MB/s Write Speeds and 950MB/s Read Speeds. For maximum performance it comes equipped with a USB-C Port to leverage the faster speeds offered by USB 3.2 Gen 2. Compatible with Thunderbolt 3/4 Ports as well as older USB-A Ports (via a USB-C to USB-A Cable).</p>
+<p data-mce-fragment="1">Set the new standard of professionalism with our SSD Labelling System. Use the<span data-mce-fragment="1"> </span><a data-mce-fragment="1" href="https://filmdrives.com/pages/label-maker" title="Label Maker App" data-mce-href="https://filmdrives.com/pages/label-maker">Film Drives 'Label Maker' App</a><span data-mce-fragment="1"> </span>to quickly generate unique SSD Labels for every job. The big, easy to read labels simply slide into the plastic pouch built into every Film Drives Case. Stick the second label on the drive itself and stay super organised.</p>
+<p data-mce-fragment="1">With the Film Drives 'Set Ready Protective Case' your pack down will be quick, your cables will be organised and your data will be safe. Housing your rushes in the durable case trumps a cardboard box any day, shield your production while in transit and ensure safe end-to-end delivery for you and your client.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>FD_NVME_2TB</s:tag>
+    <s:variant>
+      <id>https://filmdrives.com/products/6629886394423</id>
+      <title>Express Post (1-2 Business Day Delivery)</title>
+      <s:price currency="AUD">549.00</s:price>
+      <s:sku>FD_NVME_2TB_SHP</s:sku>
+      <s:grams>285</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://filmdrives.com/products/4534626975799</id>
+    <published>2020-05-19T11:09:51+10:00</published>
+    <updated>2020-05-19T11:09:51+10:00</updated>
+    <link rel="alternate" type="text/html" href="https://filmdrives.com/products/film-drives-2-bay-ssd-raid"/>
+    <title>Film Drives &apos;2-BAY SSD RAID&apos;</title>
+    <s:type>Solid State Drives</s:type>
+    <s:vendor>Film Drives</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/2691/1130/products/4TB_2BaySSDRAID.jpg?v=1589847674"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Film Drives<br>
+        <strong>Type: </strong>Solid State Drives<br>
+        <strong>Price: </strong>
+            1049.00 - 1899.00
+            <a href="https://filmdrives.com/products/film-drives-2-bay-ssd-raid">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://filmdrives.com/products/4534626975799</id>
+      <title>4TB</title>
+      <s:price currency="AUD">1049.00</s:price>
+      <s:sku>4TB_2BAY_SSR_SHP</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://filmdrives.com/products/4534626975799</id>
+      <title>8TB</title>
+      <s:price currency="AUD">1899.00</s:price>
+      <s:sku>8TB_2BAY_SSR_SHP</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://filmdrives.com/products/1961327951914</id>
+    <published>2019-05-22T11:27:42+10:00</published>
+    <updated>2019-05-22T11:27:42+10:00</updated>
+    <link rel="alternate" type="text/html" href="https://filmdrives.com/products/custom-ssd"/>
+    <title>Film Drives &apos;CUSTOM SSD&apos;</title>
+    <s:type>Solid State Drives</s:type>
+    <s:vendor>Film Drives</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/2691/1130/products/CustomSSD_NEW.jpg?v=1589847179"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Film Drives<br>
+        <strong>Type: </strong>Solid State Drives<br>
+        <strong>Price: </strong>
+            349.00 - 1049.00
+            <a href="https://filmdrives.com/products/custom-ssd">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://filmdrives.com/products/1961327951914</id>
+      <title>1TB</title>
+      <s:price currency="AUD">349.00</s:price>
+      <s:sku>1TB_SSD_SHP</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://filmdrives.com/products/1961327951914</id>
+      <title>2TB</title>
+      <s:price currency="AUD">649.00</s:price>
+      <s:sku>2TB_SSD_SHP</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://filmdrives.com/products/1961327951914</id>
+      <title>4TB</title>
+      <s:price currency="AUD">1049.00</s:price>
+      <s:sku>4TB_SSD_SHP</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

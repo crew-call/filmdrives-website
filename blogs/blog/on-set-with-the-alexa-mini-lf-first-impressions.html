@@ -1,0 +1,1032 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#3d4246">
+  <link rel="canonical" href="on-set-with-the-alexa-mini-lf-first-impressions.html">
+
+  
+    <link rel="shortcut icon" href="../../cdn/shop/files/Favicon_32x32%EF%B9%96v=1613589736.png" type="image/png">
+  
+
+  
+  <title>ON-SET WITH THE ALEXA MINI LF | FIRST IMPRESSIONS | Film Drives  </title>
+
+  
+    <meta name="description" content="Last week I had my first job with the Alexa Mini LF. It was great to get hands on with ARRI&#39;s latest camera and test out some of the new hardware. I thought I&#39;d put together this post for those that are curious about the new Codex Compact Drives and their companion Compact Drive Reader as well as some of the ins and ou">
+  
+
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+
+
+<meta property="og:site_name" content="Film Drives">
+<meta property="og:url" content="https://filmdrives.com/blogs/blog/on-set-with-the-alexa-mini-lf-first-impressions">
+<meta property="og:title" content="ON-SET WITH THE ALEXA MINI LF | FIRST IMPRESSIONS">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Last week I had my first job with the Alexa Mini LF. It was great to get hands on with ARRI's latest camera and test out some of the new hardware. I thought I'd put together this post for those that are curious about the new Codex Compact Drives and their companion Compact Drive Reader as well as some of the ins and outs of the workflow.
+CODEX COMPACT DRIVES
+Our camera kit came with 4x Codex Compact Drives and 1x Codex Compact Drive Reader which was provided by Panavision Melbourne.
+
+Each Compact Drive is 1TB, which gives you 960GB of usable space. Initially I was under the impression that these Compact Drives were setup much like the previous generations of Codex Drives, in a RAID 0 Configuration. I was pondering if they were made up from 4x 256GB SSDs or 2x 512GB SSDs RAIDed together. But Oliver from ARRI has cleared up the confusion. Please see the update below.
+UPDATE:Oliver from ARRI has clarified that the Codex Compact Drives do not use a RAID Configuration like the previous generation. He says 'Codex uses a customized (wider) M.2 SSD with a higher number of memory chips for parallel writing. So you might call it some sort of RAID on a chip'. Thank you for the clarifcation Oliver!
+Below you can see the connection that the Compact Drive uses to interface with the Alexa Mini LF and the Compact Drive Reader.
+
+Below you can see the back of a Codex Compact Drive. It contains information such as Model Number, Serial Number, etc.
+
+I was particularly surprised at how small the Compact Drives are. They truly are compact. Measuring in at 44mm x 77mm x 9.8mm, they fit snugly in the palm of your hand as depicted below.
+
+The Compact Drives come in a protective, plastic case. Our 2nd AC kept saying it's like a cigarette case from an 80s Film.
+
+The case is made from plastic with high density foam on the inside. As shown above the Compact Drive fits within the case perfectly. Below you can see the foam cut out, it has very tight tolerances. If you plan on leaving camera tape on your mag and closing the case, it's not going to happen. The camera tape adds thickness and the case won't click closed properly.
+
+To be honest I would have expected something a little more durable. Below is an image of the release which allows the case to open. When transporting a fresh mag on the job this case slipped from my hand and fell onto soft grass, the very minor fall ejected the lock mechanism and the Compact Drive came tumbling out of it's case. Not very ideal. It would work to prevent a small impact, but too bad if it was a large impact. What if it was raining, the mag may survive the fall but if the case pops open there is a hot chance of it making contact with the environmental elements such as water, dirt, etc.
+
+CODEX COMPACT DRIVE READER
+Panavision supplied our Compact Drive Reader with a Belkin Thunderbolt 3 to Thunderbolt 3 Cable. This worked no problems but definitely wasn't required as the Compact Drive Reader functions on USB-C, not Thunderbolt. A difference to keep in mind when thinking about offload speeds and different cables.
+
+I ran all offloads from my 2018 6-Core MacBook Pro. This laptop is equipped with 4x TB3 / USB 3.1 Ports that run at full bandwidth. Using the TB3 Cable provided by Panavision, my MacBook interpreted the device correctly as USB-C and ran at USB 3.1 Gen 2 Bandwidth (10GB/s or 1250MB/s). It is fully powered via bus power and doesn't require any external power to function correctly.
+Many Data Wranglers in Melbourne are still running the older style MacBook Pro which comes equipped with 2x TB2 Ports and 2x USB3.0 Ports. I was curious if the Compact Drive Reader would function on this setup so I tested it.
+
+The answer was yes. In the image above you can see the Compact Drive Reader connected to an older style MacBook Pro with a USB-C to USB-A Cable. While still fully powered via bus power you won't have full data bandwidth when running in this configuration. The Compact Drive Reader will be limited by USB3.0 (5GB/s or 420MB/s), this means your read speeds will be significantly lower than using the exact same Compact Drive and Reader on a newer style USB-C MacBook Pro. If you are offloading to SSDs this is going to impact your offload times, if using 5400rpm spinning disk drives then you won't see any speed difference between an older MacBook Pro and a newer MacBook Pro.
+One interesting point worth noting, there seems to be a fan somewhere in the Compact Drive Reader. When I was offloading footage I'd notice a fan come on from time to time. It's very distinct, you'll definitely hear it in a normal indoor environment. I suspect this is to help regulate the temperature of the Compact Drive so that it doesn't overheat.
+Initially I thought the Compact Drive may have had the fan which in some regards would make sense as it could cool itself both in-camera and in-reader, but there are no air vents on the Compact Drive so I suspect it's housing just acts as a heatsink. The Compact Drive Reader has what looks like a vent on the rear end. While I couldn't see a fan, I could definitely hear one, so I expect this may serve as air intake or exhaust.
+
+WORKFLOW
+On this particular job we were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ. I actually would have liked to be shooting ARRIRAW on this one so I could have given Codex HDE a solid test run, but that wasn't the format of choice.
+.MXF FILE WRAPPER
+The most important thing to keep in mind when shooting ProRes on Alexa Mini LF is that it wraps ProRes in a .mxf wrapper as opposed to the .mov wrapper that you would be used to when working with a regular Alexa Mini. As you can see below, you have the .mxf ProRes Clips and the standard ARRI Metadata presented on the card.
+
+Normally I would use Apple Quick Look or Quicktime Player to watch through the ProRes .mov Clips for quality control, when wrapped in .mxf neither of these worked. I ended up using DaVinci Resolve to playback the clips. I tested a few other software packages for their compatibility with the files, Adobe Premiere Pro worked, ARRIRAW Converter worked, VLC worked.
+UPDATE:You can playback ProRes in a .mxf Wrapper in both Quick Look and QuickTime, you just need to tweak some software. Read more about it on this blog post.
+SOFTWARE
+In terms of software, you should make sure you have the newest version of Codex Device Manager. Recently they released V5 which is in BETA and provides compatibility for the Alexa Mini LF and Codex HDE.
+For this job I used Pomfort Silverstack. I did a few tests with an older version of Silverstack and a few tests with the latest version of Silverstack. As you can see in the images below, the old version of Silverstack didn't work too well with the Alexa Mini LF Footage. The clip names had a frame count added to the end, the thumbnails didn't work, the metadata didn't carry across, etc. This is because the old version of Silverstack doesn't know about the Alexa Mini LF and it's .mxf ProRes Format, thus it imports the clips as 'Generic Clips' without any of the bells and whistles that you would expect.
+OLD VERSION OF SILVERSTACK
+
+LATEST VERSION OF SILVERSTACK
+
+To amend this, run the latest version of Silverstack. As you can see above, thumbnails work, metadata has carried across and the filenames are presented as they should be. No matter which data management software you use, Silverstack, Hedge or Shotput Pro, make sure you are on the latest version.
+FORMATTING MAGS
+As part of my normal workflow, when I have backed up a mag and signed it all off I will format the mag before returning it to set. This means that when it is inserted into a camera, particularly an ARRI Camera, it will prompt you to format the mag prior to use. This is great as it leaves no room for error, if a card prompts you for a format when you do a reload you are doing the right thing, if you get no prompt perhaps something is wrong and requires a second look.
+The Alexa Mini LF fits into this workflow as you would expect. In Disk Utility you can see the 960GB Compact Drive which is formatted as UDF by the camera.
+
+If you format it as MS-DOS (FAT) in Disk Utility, when inserted into the camera with the EVF open it will prompt you to format the mag, just like the regular Alexa Mini. Winning.
+
+DATA RATE
+One last note on workflow that will essentially make or break your job. Be aware of your shooting data rate and make sure you have fast enough drives. The Alexa Mini LF is very data hungry.
+We were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ which allows for 46 Minutes Shooting Time at 25fps for 1TB of Data. This essentially means that for every 5 Mins you shoot, you have 128GB of data to offload.
+If you tackle this with 5400rpm spinning disk drives that 128GB will take around 40 Mins to offload. That means 5 Mins Shooting = 40 Mins Offloading, that's an 8:1 Ratio in terms of offload time to shooting time. You will very quickly get backlogged and wind up with a bunch of data overtime at the end of the day.
+For the Alexa Mini LF you really need to be offloading to SSDs or 5 Bay RAIDs that have a write speed of at least 420MB/s. If you don't you're asking for trouble.
+We shot some stuff at 33.333fps and 40fps at 4.5K Open Gate, this racks up the data super quick. We did a few short takes and I had 300GB to offload within a matter of minutes.
+To some it may seem counter intuitive to spend more money on drives but I assure you that the more you spend on faster drives (SSDs or Big RAIDs), the more you will save on labour, particularly in the form of overtime at the end of the day. Plan ahead and be prepared.
+CONCLUSION
+This was my first job with the Alexa Mini LF, it went smoothly with minimal fuss. There will be many more things to play with and test out going forward but I hope this helps to give a few of you a heads up when you get sent out with this camera for the first time.
+Thanks!">
+
+<meta property="og:image" content="http://filmdrives.com/cdn/shop/articles/MiniLF_CoverPhoto_1200x1200.jpg?v=1566789476">
+<meta property="og:image:secure_url" content="https://filmdrives.com/cdn/shop/articles/MiniLF_CoverPhoto_1200x1200.jpg?v=1566789476">
+
+
+  <meta name="twitter:site" content="@filmdrives">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ON-SET WITH THE ALEXA MINI LF | FIRST IMPRESSIONS">
+<meta name="twitter:description" content="Last week I had my first job with the Alexa Mini LF. It was great to get hands on with ARRI's latest camera and test out some of the new hardware. I thought I'd put together this post for those that are curious about the new Codex Compact Drives and their companion Compact Drive Reader as well as some of the ins and outs of the workflow.
+CODEX COMPACT DRIVES
+Our camera kit came with 4x Codex Compact Drives and 1x Codex Compact Drive Reader which was provided by Panavision Melbourne.
+
+Each Compact Drive is 1TB, which gives you 960GB of usable space. Initially I was under the impression that these Compact Drives were setup much like the previous generations of Codex Drives, in a RAID 0 Configuration. I was pondering if they were made up from 4x 256GB SSDs or 2x 512GB SSDs RAIDed together. But Oliver from ARRI has cleared up the confusion. Please see the update below.
+UPDATE:Oliver from ARRI has clarified that the Codex Compact Drives do not use a RAID Configuration like the previous generation. He says 'Codex uses a customized (wider) M.2 SSD with a higher number of memory chips for parallel writing. So you might call it some sort of RAID on a chip'. Thank you for the clarifcation Oliver!
+Below you can see the connection that the Compact Drive uses to interface with the Alexa Mini LF and the Compact Drive Reader.
+
+Below you can see the back of a Codex Compact Drive. It contains information such as Model Number, Serial Number, etc.
+
+I was particularly surprised at how small the Compact Drives are. They truly are compact. Measuring in at 44mm x 77mm x 9.8mm, they fit snugly in the palm of your hand as depicted below.
+
+The Compact Drives come in a protective, plastic case. Our 2nd AC kept saying it's like a cigarette case from an 80s Film.
+
+The case is made from plastic with high density foam on the inside. As shown above the Compact Drive fits within the case perfectly. Below you can see the foam cut out, it has very tight tolerances. If you plan on leaving camera tape on your mag and closing the case, it's not going to happen. The camera tape adds thickness and the case won't click closed properly.
+
+To be honest I would have expected something a little more durable. Below is an image of the release which allows the case to open. When transporting a fresh mag on the job this case slipped from my hand and fell onto soft grass, the very minor fall ejected the lock mechanism and the Compact Drive came tumbling out of it's case. Not very ideal. It would work to prevent a small impact, but too bad if it was a large impact. What if it was raining, the mag may survive the fall but if the case pops open there is a hot chance of it making contact with the environmental elements such as water, dirt, etc.
+
+CODEX COMPACT DRIVE READER
+Panavision supplied our Compact Drive Reader with a Belkin Thunderbolt 3 to Thunderbolt 3 Cable. This worked no problems but definitely wasn't required as the Compact Drive Reader functions on USB-C, not Thunderbolt. A difference to keep in mind when thinking about offload speeds and different cables.
+
+I ran all offloads from my 2018 6-Core MacBook Pro. This laptop is equipped with 4x TB3 / USB 3.1 Ports that run at full bandwidth. Using the TB3 Cable provided by Panavision, my MacBook interpreted the device correctly as USB-C and ran at USB 3.1 Gen 2 Bandwidth (10GB/s or 1250MB/s). It is fully powered via bus power and doesn't require any external power to function correctly.
+Many Data Wranglers in Melbourne are still running the older style MacBook Pro which comes equipped with 2x TB2 Ports and 2x USB3.0 Ports. I was curious if the Compact Drive Reader would function on this setup so I tested it.
+
+The answer was yes. In the image above you can see the Compact Drive Reader connected to an older style MacBook Pro with a USB-C to USB-A Cable. While still fully powered via bus power you won't have full data bandwidth when running in this configuration. The Compact Drive Reader will be limited by USB3.0 (5GB/s or 420MB/s), this means your read speeds will be significantly lower than using the exact same Compact Drive and Reader on a newer style USB-C MacBook Pro. If you are offloading to SSDs this is going to impact your offload times, if using 5400rpm spinning disk drives then you won't see any speed difference between an older MacBook Pro and a newer MacBook Pro.
+One interesting point worth noting, there seems to be a fan somewhere in the Compact Drive Reader. When I was offloading footage I'd notice a fan come on from time to time. It's very distinct, you'll definitely hear it in a normal indoor environment. I suspect this is to help regulate the temperature of the Compact Drive so that it doesn't overheat.
+Initially I thought the Compact Drive may have had the fan which in some regards would make sense as it could cool itself both in-camera and in-reader, but there are no air vents on the Compact Drive so I suspect it's housing just acts as a heatsink. The Compact Drive Reader has what looks like a vent on the rear end. While I couldn't see a fan, I could definitely hear one, so I expect this may serve as air intake or exhaust.
+
+WORKFLOW
+On this particular job we were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ. I actually would have liked to be shooting ARRIRAW on this one so I could have given Codex HDE a solid test run, but that wasn't the format of choice.
+.MXF FILE WRAPPER
+The most important thing to keep in mind when shooting ProRes on Alexa Mini LF is that it wraps ProRes in a .mxf wrapper as opposed to the .mov wrapper that you would be used to when working with a regular Alexa Mini. As you can see below, you have the .mxf ProRes Clips and the standard ARRI Metadata presented on the card.
+
+Normally I would use Apple Quick Look or Quicktime Player to watch through the ProRes .mov Clips for quality control, when wrapped in .mxf neither of these worked. I ended up using DaVinci Resolve to playback the clips. I tested a few other software packages for their compatibility with the files, Adobe Premiere Pro worked, ARRIRAW Converter worked, VLC worked.
+UPDATE:You can playback ProRes in a .mxf Wrapper in both Quick Look and QuickTime, you just need to tweak some software. Read more about it on this blog post.
+SOFTWARE
+In terms of software, you should make sure you have the newest version of Codex Device Manager. Recently they released V5 which is in BETA and provides compatibility for the Alexa Mini LF and Codex HDE.
+For this job I used Pomfort Silverstack. I did a few tests with an older version of Silverstack and a few tests with the latest version of Silverstack. As you can see in the images below, the old version of Silverstack didn't work too well with the Alexa Mini LF Footage. The clip names had a frame count added to the end, the thumbnails didn't work, the metadata didn't carry across, etc. This is because the old version of Silverstack doesn't know about the Alexa Mini LF and it's .mxf ProRes Format, thus it imports the clips as 'Generic Clips' without any of the bells and whistles that you would expect.
+OLD VERSION OF SILVERSTACK
+
+LATEST VERSION OF SILVERSTACK
+
+To amend this, run the latest version of Silverstack. As you can see above, thumbnails work, metadata has carried across and the filenames are presented as they should be. No matter which data management software you use, Silverstack, Hedge or Shotput Pro, make sure you are on the latest version.
+FORMATTING MAGS
+As part of my normal workflow, when I have backed up a mag and signed it all off I will format the mag before returning it to set. This means that when it is inserted into a camera, particularly an ARRI Camera, it will prompt you to format the mag prior to use. This is great as it leaves no room for error, if a card prompts you for a format when you do a reload you are doing the right thing, if you get no prompt perhaps something is wrong and requires a second look.
+The Alexa Mini LF fits into this workflow as you would expect. In Disk Utility you can see the 960GB Compact Drive which is formatted as UDF by the camera.
+
+If you format it as MS-DOS (FAT) in Disk Utility, when inserted into the camera with the EVF open it will prompt you to format the mag, just like the regular Alexa Mini. Winning.
+
+DATA RATE
+One last note on workflow that will essentially make or break your job. Be aware of your shooting data rate and make sure you have fast enough drives. The Alexa Mini LF is very data hungry.
+We were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ which allows for 46 Minutes Shooting Time at 25fps for 1TB of Data. This essentially means that for every 5 Mins you shoot, you have 128GB of data to offload.
+If you tackle this with 5400rpm spinning disk drives that 128GB will take around 40 Mins to offload. That means 5 Mins Shooting = 40 Mins Offloading, that's an 8:1 Ratio in terms of offload time to shooting time. You will very quickly get backlogged and wind up with a bunch of data overtime at the end of the day.
+For the Alexa Mini LF you really need to be offloading to SSDs or 5 Bay RAIDs that have a write speed of at least 420MB/s. If you don't you're asking for trouble.
+We shot some stuff at 33.333fps and 40fps at 4.5K Open Gate, this racks up the data super quick. We did a few short takes and I had 300GB to offload within a matter of minutes.
+To some it may seem counter intuitive to spend more money on drives but I assure you that the more you spend on faster drives (SSDs or Big RAIDs), the more you will save on labour, particularly in the form of overtime at the end of the day. Plan ahead and be prepared.
+CONCLUSION
+This was my first job with the Alexa Mini LF, it went smoothly with minimal fuss. There will be many more things to play with and test out going forward but I hope this helps to give a few of you a heads up when you get sent out with this camera for the first time.
+Thanks!">
+
+
+  <link href="../../cdn/shop/t/20/assets/theme.scss%EF%B9%96v=45504591378017042381736193742.css" rel="stylesheet" type="text/css" media="all" />
+  
+
+  <link href="../../../fonts.googleapis.com/css%EF%B9%96family=Source+Sans+Pro%EF%B9%95400,700.css" rel="stylesheet" type="text/css" media="all" />
+
+
+  
+
+    <link href="../../../fonts.googleapis.com/css%EF%B9%96family=Source+Sans+Pro%EF%B9%95400.css" rel="stylesheet" type="text/css" media="all" />
+  
+
+
+
+  <script>
+    var theme = {
+      strings: {
+        addToCart: "Add to cart",
+        soldOut: "Sold out",
+        unavailable: "Unavailable",
+        showMore: "Show More",
+        showLess: "Show Less",
+        addressError: "Error looking up that address",
+        addressNoResults: "No results for that address",
+        addressQueryLimit: "You have exceeded the Google API usage limit. Consider upgrading to a \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium Plan\u003c\/a\u003e.",
+        authError: "There was a problem authenticating your Google Maps account."
+      },
+      moneyFormat: "${{amount}}"
+    }
+
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+
+  <!--[if (lte IE 9) ]><script src="//filmdrives.com/cdn/shop/t/20/assets/match-media.min.js?v=22265819453975888031736191917" type="text/javascript"></script><![endif]-->
+
+  
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="../../cdn/shop/t/20/assets/lazysizes%EF%B9%96v=68441465964607740661736191917.js" async="async"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//filmdrives.com/cdn/shop/t/20/assets/lazysizes.min.js?3391"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="../../cdn/shop/t/20/assets/vendor%EF%B9%96v=136118274122071307521736191917.js" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//filmdrives.com/cdn/shop/t/20/assets/vendor.js?v=136118274122071307521736191917"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="../../cdn/shop/t/20/assets/theme%EF%B9%96v=170776731522347393141736191917.js" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//filmdrives.com/cdn/shop/t/20/assets/theme.js?v=170776731522347393141736191917"></script><![endif]-->
+
+  
+  
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/26911130/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="cabc5fb3a656519a20692dc92c507783">
+<link rel="alternate" type="application/atom+xml" title="Feed" href="../blog.atom" />
+<script async="async" src="https://filmdrives.com/checkouts/internal/preloads.js?locale=en-AU"></script>
+<link rel="preconnect" href="https://shop.app">
+<script async="async" src="../../../shop.appx/checkouts/internal/preloads%EF%B9%96locale=en-AU&amp;shop_id=26911130.js"></script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":26911130,"countryCode":"AU","currencyCode":"AUD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/26911130","merchantName":"Film Drives","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","jcb"],"total":{"type":"pending","label":"Film Drives","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"cabc5fb3a656519a20692dc92c507783","betas":["rich-media-storefront-analytics"],"domain":"filmdrives.com","predictiveSearch":true,"shopId":26911130,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "film-drives.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"AUD","rate":"1.0"};
+Shopify.country = "AU";
+Shopify.theme = {"name":"Film Drives V1.7","id":128709001271,"schema_name":"Debut","schema_version":"1.9.1","theme_store_id":796,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "filmdrives.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"article"}</script>
+<script defer="defer" async type="module" src="../../cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_DtuiiIyl.en.esm.js"></script>
+<script defer="defer" async type="module" src="../../cdn/shopifycloud/shop-js/modules/v2/chunk.common_CUHEfi5Q.esm.js"></script>
+<script type="module">
+  await import("//filmdrives.com/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_DtuiiIyl.en.esm.js");
+await import("//filmdrives.com/cdn/shopifycloud/shop-js/modules/v2/chunk.common_CUHEfi5Q.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"shop-cart-sync":["modules/v2/client.shop-cart-sync_DFoTY42P.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"init-fed-cm":["modules/v2/client.init-fed-cm_D2UNy1i2.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/client.init-shop-email-lookup-coordinator_BQEe2rDt.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"shop-cash-offers":["modules/v2/client.shop-cash-offers_3CTtReFF.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"shop-button":["modules/v2/client.shop-button_C6oxCjDL.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"init-windoid":["modules/v2/client.init-windoid_5pix8xhK.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"avatar":["modules/v2/client.avatar_BTnouDA3.en.esm.js"],"init-shop-cart-sync":["modules/v2/client.init-shop-cart-sync_DtuiiIyl.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"shop-toast-manager":["modules/v2/client.shop-toast-manager_BYv_8cH1.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"pay-button":["modules/v2/client.pay-button_FnF9EIkY.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js"],"shop-login-button":["modules/v2/client.shop-login-button_CH1KUpOf.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"init-customer-accounts-sign-up":["modules/v2/client.init-customer-accounts-sign-up_aj7QGgYS.en.esm.js","modules/v2/client.shop-login-button_CH1KUpOf.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/client.init-shop-for-new-customer-accounts_NbnYRf_7.en.esm.js","modules/v2/client.shop-login-button_CH1KUpOf.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"init-customer-accounts":["modules/v2/client.init-customer-accounts_ppedhqCH.en.esm.js","modules/v2/client.shop-login-button_CH1KUpOf.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"shop-follow-button":["modules/v2/client.shop-follow-button_CMIBBa6u.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"lead-capture":["modules/v2/client.lead-capture_But0hIyf.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"checkout-modal":["modules/v2/client.checkout-modal_BBxc70dQ.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"shop-login":["modules/v2/client.shop-login_hM3Q17Kl.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"],"payment-terms":["modules/v2/client.payment-terms_CAtGlQYS.en.esm.js","modules/v2/chunk.common_CUHEfi5Q.esm.js","modules/v2/chunk.modal_BewljZkx.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/formbuilder.hulkapps.com\/skeletopapp.js?shop=film-drives.myshopify.com","https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/0c8adf6a32240a1997b78c07b\/ec1e6e5f6bc097387f83f1958.js?shop=film-drives.myshopify.com","https:\/\/cdn.recovermycart.com\/scripts\/keepcart\/CartJS.min.js?shop=film-drives.myshopify.com\u0026shop=film-drives.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":26911130,"offset":39600,"reqid":"a1c98acf-13e0-43f1-807b-4979787a14de-1766448455","pageurl":"filmdrives.com\/blogs\/blog\/on-set-with-the-alexa-mini-lf-first-impressions","s":"articles-22793453610","u":"a9e1f34cac10","p":"article","rtyp":"article","rid":22793453610};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script data-source-attribution="shopify.loadfeatures" defer="defer" src="../../cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js"></script>
+<script defer="defer" src="../../cdn/shopifycloud/storefront/assets/shopify_pay/storefront-65b4c6d7%EF%B9%96v=20250812.js"></script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://filmdrives.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="../../cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css">
+<style id="shopify-accelerated-checkout-cart">#shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+  
+<!-- Hits Analytics tracking code -->
+
+  
+
+<!-- end of Hits Analytics code -->
+
+  <script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+  
+<!-- BEGIN app block: shopify://apps/buddha-mega-menu-navigation/blocks/megamenu/dbb4ce56-bf86-4830-9b3d-16efbef51c6f -->
+<script>
+        var productImageAndPrice = [],
+            collectionImages = [],
+            articleImages = [],
+            mmLivIcons = false,
+            mmFlipClock = false,
+            mmFixesUseJquery = false,
+            mmNumMMI = 6,
+            mmSchemaTranslation = {},
+            mmMenuStrings =  {"menuStrings":{"default":{"DRIVES":"DRIVES","2TB NVME SSD":"2TB NVME SSD","SOFTWARE":"SOFTWARE","VIDEO ASSIST":"VIDEO ASSIST","CREW CALL":"CREW CALL","LABEL MAKER":"LABEL MAKER","HARDWARE":"HARDWARE","DATA DELUXE":"DATA DELUXE","BLOG":"BLOG","ABOUT":"ABOUT","SUPPORT":"SUPPORT","FAQS":"FAQS","CONTACT US":"CONTACT US"}},"additional":{"default":{"Add to cart":"Add to cart","Sold out":"Sold out","JUST ADDED TO YOUR CART":"JUST ADDED TO YOUR CART","OUT OF STOCK":"OUT OF STOCK","View Cart":"View Cart"}}} ,
+            mmShopLocale = "en",
+            mmShopLocaleCollectionsRoute = "/collections",
+            mmSchemaDesignJSON = [{"action":"menu-select","value":"mm-automatic"},{"action":"design","setting":"font_family","value":"Default"},{"action":"design","setting":"font_size","value":"13px"},{"action":"design","setting":"text_color","value":"#222222"},{"action":"design","setting":"link_hover_color","value":"#0da19a"},{"action":"design","setting":"link_color","value":"#4e4e4e"},{"action":"design","setting":"background_hover_color","value":"#f9f9f9"},{"action":"design","setting":"background_color","value":"#ffffff"},{"action":"design","setting":"price_color","value":"#0da19a"},{"action":"design","setting":"contact_right_btn_text_color","value":"#ffffff"},{"action":"design","setting":"contact_right_btn_bg_color","value":"#3A3A3A"},{"action":"design","setting":"contact_left_bg_color","value":"#3A3A3A"},{"action":"design","setting":"contact_left_alt_color","value":"#CCCCCC"},{"action":"design","setting":"contact_left_text_color","value":"#f1f1f0"},{"action":"design","setting":"addtocart_enable","value":"true"},{"action":"design","setting":"addtocart_text_color","value":"#333333"},{"action":"design","setting":"addtocart_background_color","value":"#ffffff"},{"action":"design","setting":"addtocart_text_hover_color","value":"#ffffff"},{"action":"design","setting":"addtocart_background_hover_color","value":"#0da19a"},{"action":"design","setting":"countdown_color","value":"#ffffff"},{"action":"design","setting":"countdown_background_color","value":"#333333"},{"action":"design","setting":"vertical_font_family","value":"Default"},{"action":"design","setting":"vertical_font_size","value":"13px"},{"action":"design","setting":"vertical_text_color","value":"#ffffff"},{"action":"design","setting":"vertical_link_color","value":"#ffffff"},{"action":"design","setting":"vertical_link_hover_color","value":"#ffffff"},{"action":"design","setting":"vertical_price_color","value":"#ffffff"},{"action":"design","setting":"vertical_contact_right_btn_text_color","value":"#ffffff"},{"action":"design","setting":"vertical_addtocart_enable","value":"true"},{"action":"design","setting":"vertical_addtocart_text_color","value":"#ffffff"},{"action":"design","setting":"vertical_countdown_color","value":"#ffffff"},{"action":"design","setting":"vertical_countdown_background_color","value":"#333333"},{"action":"design","setting":"vertical_background_color","value":"#685858"},{"action":"design","setting":"vertical_addtocart_background_color","value":"#4c4141"},{"action":"design","setting":"vertical_contact_right_btn_bg_color","value":"#4c4141"},{"action":"design","setting":"vertical_contact_left_alt_color","value":"#373131"}],
+            mmDomChangeSkipUl = ",.slick-dots,.grid--view-items",
+            buddhaMegaMenuShop = "film-drives.myshopify.com",
+            mmWireframeCompression = "0",
+            mmExtensionAssetUrl = "https://cdn.shopify.com/extensions/019abe06-4a3f-7763-88da-170e1b54169b/mega-menu-151/assets/";var bestSellersHTML = '';var newestProductsHTML = '';/* get link lists api */
+        var linkLists={"main-menu" : {"title":"Main Menu", "items":["/products/film-drives-one","/blogs/blog","/pages/about","/collections/all",]},"footer" : {"title":"Footer Menu", "items":["/pages/terms-and-conditions","/pages/privacy-policy","/pages/refunds-policy",]},"fd_nvme_2tb_shp" : {"title":"FD_NVME_2TB_SHP", "items":["/products/2tb-nvme-ssd",]},"fd_nvme_2tb_tvh" : {"title":"FD_NVME_2TB_TVH", "items":["/products/2tb-nvme-ssd-1",]},"customer-account-main-menu" : {"title":"Customer account main menu", "items":["/","https://shopify.com/26911130/account/orders?locale=en&amp;region_country=AU",]},};/*ENDPARSE*/
+
+        linkLists["force-mega-menu"]={};linkLists["force-mega-menu"].title="Debut Theme - Mega Menu";linkLists["force-mega-menu"].items=[1];
+
+        /* set product prices *//* get the collection images *//* get the article images *//* customer fixes */
+        var mmThemeFixesBeforeInit = function(){ mobileMenuMilliseconds = 500; mmHorizontalMenus = "#AccessibleNav #SiteNav"; mmVerticalMenus = "#MobileNav"; }; var mmThemeFixesBefore = function(){ if (selectedMenu=="force-mega-menu" && tempMenuObject.u.id == "MobileNav") { tempMenuObject.forceMenu = true; tempMenuObject.skipCheck = true; tempMenuObject.liClasses = "mobile-nav__item border-bottom"; tempMenuObject.aClasses = "mobile-nav__link"; tempMenuObject.liItems = []; var children = tempMenuObject.u.children; for (var i=0; i<children.length; i++) { if (children[i].nodeName == "LI") { if (children[i].querySelector(".currency-selector") == null) { tempMenuObject.liItems[tempMenuObject.liItems.length] = children[i]; } } } } else if (selectedMenu=="force-mega-menu" && tempMenuObject.u.id == "SiteNav") { tempMenuObject.forceMenu = true; tempMenuObject.skipCheck = true; tempMenuObject.liClasses = ""; tempMenuObject.aClasses = "site-nav__link site-nav__link--main"; tempMenuObject.liItems = []; var children = tempMenuObject.u.children; for (var i=0; i<children.length; i++) { if (children[i].nodeName == "LI") { tempMenuObject.liItems[tempMenuObject.liItems.length] = children[i]; } } } }; var mmThemeFixesAfter = function(){ var style = " .mobile-nav-wrapper { overflow:visible; z-index:1; opacity: 1; } .site-header { z-index:9; }"; mmAddStyle(style, "themeScript"); }; 
+        
+
+        var mmWireframe = {"html" : "<li class=\"buddha-menu-item\" itemId=\"KM5LV\"  ><a data-href=\"/collections/products\" href=\"/collections/products\" aria-label=\"DRIVES\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><i class=\"mm-icon static fa fa-none\" aria-hidden=\"true\"></i><span class=\"mm-title\">DRIVES</span><i class=\"mm-arrow mm-angle-down\" aria-hidden=\"true\"></i><span class=\"toggle-menu-btn\" style=\"display:none;\" title=\"Toggle menu\" onclick=\"return toggleSubmenu(this)\"><span class=\"mm-arrow-icon\"><span class=\"bar-one\"></span><span class=\"bar-two\"></span></span></span></a><ul class=\"mm-submenu tree  small mm-last-level\"><li data-href=\"/products/2tb-nvme-ssd\" href=\"/products/2tb-nvme-ssd\" aria-label=\"2TB NVME SSD\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"/products/2tb-nvme-ssd\" href=\"/products/2tb-nvme-ssd\" aria-label=\"2TB NVME SSD\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">2TB NVME SSD</span></a></li></ul></li><li class=\"buddha-menu-item\" itemId=\"8WJgu\"  ><a data-href=\"no-link\" href=\"javascript:void(0);\" aria-label=\"SOFTWARE\" data-no-instant=\"\" onclick=\"return toggleSubmenu(this);\"  ><span class=\"mm-title\">SOFTWARE</span><i class=\"mm-arrow mm-angle-down\" aria-hidden=\"true\"></i><span class=\"toggle-menu-btn\" style=\"display:none;\" title=\"Toggle menu\" onclick=\"return toggleSubmenu(this)\"><span class=\"mm-arrow-icon\"><span class=\"bar-one\"></span><span class=\"bar-two\"></span></span></span></a><ul class=\"mm-submenu tree  small mm-last-level\"><li data-href=\"https://apps.apple.com/us/app/video-assist/id6464140279\" href=\"https://apps.apple.com/us/app/video-assist/id6464140279\" aria-label=\"VIDEO ASSIST\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"https://apps.apple.com/us/app/video-assist/id6464140279\" href=\"https://apps.apple.com/us/app/video-assist/id6464140279\" aria-label=\"VIDEO ASSIST\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">VIDEO ASSIST</span></a></li><li data-href=\"https://apps.apple.com/au/app/crew-call/id1532198878\" href=\"https://apps.apple.com/au/app/crew-call/id1532198878\" aria-label=\"CREW CALL\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"https://apps.apple.com/au/app/crew-call/id1532198878\" href=\"https://apps.apple.com/au/app/crew-call/id1532198878\" aria-label=\"CREW CALL\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">CREW CALL</span></a></li><li data-href=\"/pages/label-maker\" href=\"/pages/label-maker\" aria-label=\"LABEL MAKER\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"/pages/label-maker\" href=\"/pages/label-maker\" aria-label=\"LABEL MAKER\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">LABEL MAKER</span></a></li></ul></li><li class=\"buddha-menu-item\" itemId=\"JP53A\"  ><a data-href=\"no-link\" href=\"javascript:void(0);\" aria-label=\"HARDWARE\" data-no-instant=\"\" onclick=\"return toggleSubmenu(this);\"  ><span class=\"mm-title\">HARDWARE</span><i class=\"mm-arrow mm-angle-down\" aria-hidden=\"true\"></i><span class=\"toggle-menu-btn\" style=\"display:none;\" title=\"Toggle menu\" onclick=\"return toggleSubmenu(this)\"><span class=\"mm-arrow-icon\"><span class=\"bar-one\"></span><span class=\"bar-two\"></span></span></span></a><ul class=\"mm-submenu tree  small mm-last-level\"><li data-href=\"/pages/data-deluxe\" href=\"/pages/data-deluxe\" aria-label=\"DATA DELUXE\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"/pages/data-deluxe\" href=\"/pages/data-deluxe\" aria-label=\"DATA DELUXE\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">DATA DELUXE</span></a></li></ul></li><li class=\"buddha-menu-item\" itemId=\"DMNOy\"  ><a data-href=\"/blogs/blog\" href=\"/blogs/blog\" aria-label=\"BLOG\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">BLOG</span></a></li><li class=\"buddha-menu-item\" itemId=\"EuNht\"  ><a data-href=\"/pages/about\" href=\"/pages/about\" aria-label=\"ABOUT\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">ABOUT</span></a></li><li class=\"buddha-menu-item\" itemId=\"rf0C4\"  ><a data-href=\"/pages/faqs\" href=\"/pages/faqs\" aria-label=\"SUPPORT\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">SUPPORT</span><i class=\"mm-arrow mm-angle-down\" aria-hidden=\"true\"></i><span class=\"toggle-menu-btn\" style=\"display:none;\" title=\"Toggle menu\" onclick=\"return toggleSubmenu(this)\"><span class=\"mm-arrow-icon\"><span class=\"bar-one\"></span><span class=\"bar-two\"></span></span></span></a><ul class=\"mm-submenu tree  small mm-last-level\"><li data-href=\"/pages/faqs\" href=\"/pages/faqs\" aria-label=\"FAQS\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"/pages/faqs\" href=\"/pages/faqs\" aria-label=\"FAQS\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">FAQS</span></a></li><li data-href=\"/pages/contact\" href=\"/pages/contact\" aria-label=\"CONTACT US\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><a data-href=\"/pages/contact\" href=\"/pages/contact\" aria-label=\"CONTACT US\" data-no-instant=\"\" onclick=\"mmGoToPage(this, event); return false;\"  ><span class=\"mm-title\">CONTACT US</span></a></li></ul></li>" };
+
+        function mmLoadJS(file, async = true) {
+            let script = document.createElement("script");
+            script.setAttribute("src", file);
+            script.setAttribute("data-no-instant", "");
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("async", async);
+            document.head.appendChild(script);
+        }
+        function mmLoadCSS(file) {  
+            var style = document.createElement('link');
+            style.href = file;
+            style.type = 'text/css';
+            style.rel = 'stylesheet';
+            document.head.append(style); 
+        }
+              
+        var mmDisableWhenResIsLowerThan = '';
+        var mmLoadResources = (mmDisableWhenResIsLowerThan == '' || mmDisableWhenResIsLowerThan == 0 || (mmDisableWhenResIsLowerThan > 0 && window.innerWidth>=mmDisableWhenResIsLowerThan));
+        if (mmLoadResources) {
+            /* load resources via js injection */
+            mmLoadJS("https://cdn.shopify.com/extensions/019abe06-4a3f-7763-88da-170e1b54169b/mega-menu-151/assets/buddha-megamenu.js");
+            
+            mmLoadCSS("https://cdn.shopify.com/extensions/019abe06-4a3f-7763-88da-170e1b54169b/mega-menu-151/assets/buddha-megamenu2.css");mmLoadCSS("https://cdn.shopify.com/extensions/019abe06-4a3f-7763-88da-170e1b54169b/mega-menu-151/assets/fontawesome.css");function mmLoadResourcesAtc(){
+                    if (document.body) {
+                        document.body.insertAdjacentHTML("beforeend", `
+                            <div class="mm-atc-popup" style="display:none;">
+                                <div class="mm-atc-head"> <span></span> <div onclick="mmAddToCartPopup(\'hide\');"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg></div></div>
+                                <div class="mm-atc-product">
+                                    <img class="mm-atc-product-image" alt="Add to cart product"/>
+                                    <div>
+                                        <div class="mm-atc-product-name"> </div>
+                                        <div class="mm-atc-product-variant"> </div>
+                                    </div>
+                                </div>
+                                <a href="/cart" class="mm-atc-view-cart"> VIEW CART</a>
+                            </div>
+                        `);
+                    }
+                }
+                if (document.readyState === "loading") {
+                    document.addEventListener("DOMContentLoaded", mmLoadResourcesAtc);
+                } else {
+                    mmLoadResourcesAtc();
+                }}
+    </script><!-- HIDE ORIGINAL MENU --><style id="mmHideOriginalMenuStyle">#SiteNav {visibility: hidden !important;} </style>
+        <script>
+            setTimeout(function(){
+                var mmHideStyle  = document.querySelector("#mmHideOriginalMenuStyle");
+                if (mmHideStyle) mmHideStyle.parentNode.removeChild(mmHideStyle);
+            },10000);
+        </script>
+<!-- END app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 26911130,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "article"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 26911130,storefrontBaseUrl: "https://filmdrives.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86"],webPixelsConfigList: [{"id":"81788983","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS"],"name":"Google Analytics tag (migrated)"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Film Drives","paymentSettings":{"currencyCode":"AUD"},"myshopifyDomain":"film-drives.myshopify.com","countryCode":"AU","storefrontUrl":"https:\/\/filmdrives.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://filmdrives.com/cdn","1e666a24w2e65f183p6464de52mb8aad81d",{"modern":"","legacy":""},{"shopId":"26911130","storefrontBaseUrl":"https:\/\/filmdrives.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\"]","isMerchantRequest":"false","hashVersion":"1e666a24w2e65f183p6464de52mb8aad81d","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'AUD';
+  var meta = {"page":{"pageType":"article","resourceType":"article","resourceId":22793453610,"requestId":"a1c98acf-13e0-43f1-807b-4979787a14de-1766448455"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 26911130,
+      theme_id: 128709001271,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//filmdrives.com/cdn/s/trekkie.storefront.8f32c7f0b513e73f3235c26245676203e1209161.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//filmdrives.com/cdn/s/trekkie.storefront.8f32c7f0b513e73f3235c26245676203e1209161.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//filmdrives.com/cdn/s/trekkie.storefront.8f32c7f0b513e73f3235c26245676203e1209161.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":26911130,"isMerchantRequest":null,"themeId":128709001271,"themeCityHash":"16053305806338798948","contentLanguage":"en","currency":"AUD","eventMetadataId":"c24788e3-33de-41c9-9f1f-464c6b5903b4"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["65f19447"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"article","resourceType":"article","resourceId":22793453610,"requestId":"a1c98acf-13e0-43f1-807b-4979787a14de-1766448455","shopifyEmitted":true});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//filmdrives.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="../../cdn/shopifycloud/perf-kit/shopify-perf-kit-2.1.2.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="26911130"
+  data-render-region="gcp-asia-southeast1"
+  data-page-type="article"
+  data-theme-instance-id="128709001271"
+  data-theme-name="Debut"
+  data-theme-version="1.9.1"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="../../api/collect.html"
+></script>
+</head>
+
+<body class="template-article">
+  
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">Skip to content</a>
+
+  <div id="SearchDrawer" class="search-bar drawer drawer--top">
+    <div class="search-bar__table">
+      <div class="search-bar__table-cell search-bar__form-wrapper">
+        <form class="search search-bar__form" action="https://filmdrives.com/search" method="get" role="search">
+          <button class="search-bar__submit search__submit btn--link" type="submit">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 37 40"><path d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z"/></svg>
+            <span class="icon__fallback-text">Submit</span>
+          </button>
+          <input class="search__input search-bar__input" type="search" name="q" value="" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+      <div class="search-bar__table-cell text-right">
+        <button type="button" class="btn--link search-bar__close js-drawer-close">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 37 40"><path d="M21.3 23l11-11c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0l-11 11-11-11c-.8-.8-2-.8-2.8 0-.8.8-.8 2 0 2.8l11 11-11 11c-.8.8-.8 2 0 2.8.4.4.9.6 1.4.6s1-.2 1.4-.6l11-11 11 11c.4.4.9.6 1.4.6s1-.2 1.4-.6c.8-.8.8-2 0-2.8l-11-11z"/></svg>
+          <span class="icon__fallback-text">Close search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="shopify-section-header" class="shopify-section">
+
+<div data-section-id="header" data-section-type="header-section">
+  <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">
+    <ul id="MobileNav" class="mobile-nav">
+      
+<li class="mobile-nav__item border-bottom">
+          
+            <a href="../../products/film-drives-one.html" class="mobile-nav__link">
+              ONE
+            </a>
+          
+        </li>
+      
+<li class="mobile-nav__item border-bottom">
+          
+            <a href="../blog.html" class="mobile-nav__link">
+              BLOG
+            </a>
+          
+        </li>
+      
+<li class="mobile-nav__item border-bottom">
+          
+            <a href="../../pages/about.html" class="mobile-nav__link">
+              ABOUT
+            </a>
+          
+        </li>
+      
+<li class="mobile-nav__item">
+          
+            <a href="../../collections/all.html" class="mobile-nav__link">
+              SUPPORT
+            </a>
+          
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+
+  <header class="site-header border-bottom logo--left" role="banner">
+    <div class="grid grid--no-gutters grid--table">
+      
+
+      
+
+      <div class="grid__item small--one-half medium-up--one-quarter logo-align--left">
+        
+        
+          <div class="h2 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+        
+          
+<a href="../../index.html" itemprop="url" class="site-header__logo-image">
+              
+    <img class="lazyload js"
+         src="cdn/shop/files/FD_BannerLogo_300x300.png"
+         data-src="cdn/shop/files/FD_BannerLogo_300x300.png"
+         data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+         data-aspectratio="2.9220779220779223"
+         data-sizes="auto"
+         alt="Film Drives"
+         style="max-width: 150px">
+    <noscript>
+
+      <img src="cdn/shop/files/FD_BannerLogo_150x.png"
+           srcset="cdn/shop/files/FD_BannerLogo_150x.png, cdn/shop/files/FD_BannerLogo_150x@2x.png"
+           alt="Film Drives"
+           itemprop="logo"
+           style="max-width: 150px;">
+    </noscript>
+  </a>
+          
+        
+          </div>
+        
+      </div>
+
+      
+        <nav class="grid__item medium-up--one-half small--hide" id="AccessibleNav" role="navigation">
+          <ul class="site-nav list--inline " id="SiteNav">
+  
+    
+
+
+    
+      <li >
+        <a href="../../products/film-drives-one.html" class="site-nav__link site-nav__link--main">ONE</a>
+      </li>
+    
+  
+    
+
+
+    
+      <li class="site-nav--active">
+        <a href="../blog.html" class="site-nav__link site-nav__link--main">BLOG</a>
+      </li>
+    
+  
+    
+
+
+    
+      <li >
+        <a href="../../pages/about.html" class="site-nav__link site-nav__link--main">ABOUT</a>
+      </li>
+    
+  
+    
+
+
+    
+      <li >
+        <a href="../../collections/all.html" class="site-nav__link site-nav__link--main">SUPPORT</a>
+      </li>
+    
+  
+</ul>
+
+        </nav>
+      
+
+      <div class="grid__item small--one-half medium-up--one-quarter text-right site-header__icons site-header__icons--plus">
+        <div class="site-header__icons-wrapper">
+          
+            <div class="site-header__search small--hide">
+
+            </div>
+          
+
+          <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
+
+            <span class="icon__fallback-text">Search</span>
+          </button>
+
+          
+            
+              <a href="https://filmdrives.com/account/login" class="site-header__account">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-login" viewBox="0 0 28.33 37.68"><path d="M14.17 14.9a7.45 7.45 0 1 0-7.5-7.45 7.46 7.46 0 0 0 7.5 7.45zm0-10.91a3.45 3.45 0 1 1-3.5 3.46A3.46 3.46 0 0 1 14.17 4zM14.17 16.47A14.18 14.18 0 0 0 0 30.68c0 1.41.66 4 5.11 5.66a27.17 27.17 0 0 0 9.06 1.34c6.54 0 14.17-1.84 14.17-7a14.18 14.18 0 0 0-14.17-14.21zm0 17.21c-6.3 0-10.17-1.77-10.17-3a10.17 10.17 0 1 1 20.33 0c.01 1.23-3.86 3-10.16 3z"/></svg>
+                <span class="icon__fallback-text">Log in</span>
+              </a>
+            
+          
+
+          <a href="https://filmdrives.com/cart" class="site-header__cart">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 37 40"><path d="M36.5 34.8L33.3 8h-5.9C26.7 3.9 23 .8 18.5.8S10.3 3.9 9.6 8H3.7L.5 34.8c-.2 1.5.4 2.4.9 3 .5.5 1.4 1.2 3.1 1.2h28c1.3 0 2.4-.4 3.1-1.3.7-.7 1-1.8.9-2.9zm-18-30c2.2 0 4.1 1.4 4.7 3.2h-9.5c.7-1.9 2.6-3.2 4.8-3.2zM4.5 35l2.8-23h2.2v3c0 1.1.9 2 2 2s2-.9 2-2v-3h10v3c0 1.1.9 2 2 2s2-.9 2-2v-3h2.2l2.8 23h-28z"/></svg>
+            <span class="visually-hidden">Cart</span>
+            <span class="icon__fallback-text">Cart</span>
+            
+          </a>
+
+          
+            <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 37 40"><path d="M33.5 25h-30c-1.1 0-2-.9-2-2s.9-2 2-2h30c1.1 0 2 .9 2 2s-.9 2-2 2zm0-11.5h-30c-1.1 0-2-.9-2-2s.9-2 2-2h30c1.1 0 2 .9 2 2s-.9 2-2 2zm0 23h-30c-1.1 0-2-.9-2-2s.9-2 2-2h30c1.1 0 2 .9 2 2s-.9 2-2 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 37 40"><path d="M21.3 23l11-11c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0l-11 11-11-11c-.8-.8-2-.8-2.8 0-.8.8-.8 2 0 2.8l11 11-11 11c-.8.8-.8 2 0 2.8.4.4.9.6 1.4.6s1-.2 1.4-.6l11-11 11 11c.4.4.9.6 1.4.6s1-.2 1.4-.6c.8-.8.8-2 0-2.8l-11-11z"/></svg>
+              <span class="icon__fallback-text">expand/collapse</span>
+            </button>
+          
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  
+</div>
+
+
+</div>
+
+  <div class="page-container" id="PageContainer">
+
+    <main class="main-content" id="MainContent" role="main">
+      
+
+
+
+
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+ <script>
+   function onSubmit(token) {
+     document.getElementById("comment_form").submit();
+   }
+ </script>
+
+<article class="page-width" itemscope itemtype="http://schema.org/Article">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div id="shopify-section-article-template" class="shopify-section"><div class="section-header text-center">
+  <h1 class="article__title">ON-SET WITH THE ALEXA MINI LF | FIRST IMPRESSIONS</h1>
+  
+    <span class="article__author">by Bradley Andrew</span>
+  
+
+  
+</div>
+
+<div class="rte" itemprop="articleBody">
+  Last week I had my first job with the <a href="https://www.arri.com/en/camera-systems/cameras/alexa-mini-lf" target="_blank" title="Alexa Mini LF" rel="noopener noreferrer">Alexa Mini LF</a>. It was great to get hands on with ARRI's latest camera and test out some of the new hardware. I thought I'd put together this post for those that are curious about the new <a href="https://codex.online/products/media/compact-drive" target="_blank" title="Compact Drives" rel="noopener noreferrer">Codex Compact Drives</a> and their companion <a href="https://codex.online/products/media-stations/compact-drive-reader" target="_blank" title="Compact Drive Reader" rel="noopener noreferrer">Compact Drive Reader</a> as well as some of the ins and outs of the workflow.<br>
+<h1 style="text-align: center;"><strong><span style="color: #000000;">CODEX COMPACT DRIVES<br></span></strong></h1>
+<p>Our camera kit came with 4x Codex Compact Drives and 1x Codex Compact Drive Reader which was provided by Panavision Melbourne.</p>
+<p style="text-align: center;"><strong></strong><img alt="" src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_01_large.jpg?v=1566781069" style="float: none;"></p>
+<p style="text-align: left;">Each Compact Drive is 1TB, which gives you 960GB of usable space. Initially I was under the impression that these Compact Drives were setup much like the previous generations of Codex Drives, in a RAID 0 Configuration. I was pondering if they were made up from 4x 256GB SSDs or 2x 512GB SSDs RAIDed together. But Oliver from ARRI has cleared up the confusion. Please see the update below.</p>
+<p style="text-align: left;"><strong>UPDATE:</strong><br>Oliver from ARRI has clarified that the Codex Compact Drives <span style="text-decoration: underline;">do not</span> use a RAID Configuration like the previous generation. He says 'Codex uses a customized (wider) M.2 SSD with a higher number of memory chips for parallel writing. So you might call it some sort of RAID on a chip'. Thank you for the clarifcation Oliver!</p>
+<p style="text-align: left;">Below you can see the connection that the Compact Drive uses to interface with the Alexa Mini LF and the Compact Drive Reader.</p>
+<p style="text-align: left;"><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_07_large.jpg?v=1566781724" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align: left;">Below you can see the back of a Codex Compact Drive. It contains information such as Model Number, Serial Number, etc.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_03_large.jpg?v=1566781722" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>I was particularly surprised at how small the Compact Drives are. They truly are compact. Measuring in at 44mm x 77mm x 9.8mm, they fit snugly in the palm of your hand as depicted below.</p>
+<p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_02_large.jpg?v=1566781727" alt=""></p>
+<p style="text-align: left;">The Compact Drives come in a protective, plastic case. Our 2nd AC kept saying it's like a cigarette case from an 80s Film.</p>
+<p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_05_large.jpg?v=1566781728" alt=""></p>
+<p style="text-align: left;">The case is made from plastic with high density foam on the inside. As shown above the Compact Drive fits within the case perfectly. Below you can see the foam cut out, it has very tight tolerances. If you plan on leaving camera tape on your mag and closing the case, it's not going to happen. The camera tape adds thickness and the case won't click closed properly.</p>
+<p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_06_large.jpg?v=1566781727" alt=""></p>
+<p style="text-align: left;">To be honest I would have expected something a little more durable. Below is an image of the release which allows the case to open. When transporting a fresh mag on the job this case slipped from my hand and fell onto soft grass, the very minor fall ejected the lock mechanism and the Compact Drive came tumbling out of it's case. Not very ideal. It would work to prevent a small impact, but too bad if it was a large impact. What if it was raining, the mag may survive the fall but if the case pops open there is a hot chance of it making contact with the environmental elements such as water, dirt, etc.</p>
+<p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/Codex_04_large.jpg?v=1566781723" alt=""><strong></strong></p>
+<h1 style="text-align: center;"><strong><span style="color: #000000;">CODEX COMPACT DRIVE READER<br></span></strong></h1>
+<p>Panavision supplied our Compact Drive Reader with a Belkin Thunderbolt 3 to Thunderbolt 3 Cable. This worked no problems but definitely wasn't required as the Compact Drive Reader functions on USB-C, not Thunderbolt. A difference to keep in mind when thinking about offload speeds and different cables.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexReader_01_large.jpg?v=1566782975" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>I ran all offloads from my 2018 6-Core MacBook Pro. This laptop is equipped with 4x TB3 / USB 3.1 Ports that run at full bandwidth. Using the TB3 Cable provided by Panavision, my MacBook interpreted the device correctly as USB-C and ran at USB 3.1 Gen 2 Bandwidth (10GB/s or 1250MB/s). It is fully powered via bus power and doesn't require any external power to function correctly.</p>
+<p>Many Data Wranglers in Melbourne are still running the older style MacBook Pro which comes equipped with 2x TB2 Ports and 2x USB3.0 Ports. I was curious if the Compact Drive Reader would function on this setup so I tested it.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexReader_02_large.jpg?v=1566782976" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>The answer was yes. In the image above you can see the Compact Drive Reader connected to an older style MacBook Pro with a USB-C to USB-A Cable. While still fully powered via bus power you won't have full data bandwidth when running in this configuration. The Compact Drive Reader will be limited by USB3.0 (5GB/s or 420MB/s), this means your read speeds will be significantly lower than using the exact same Compact Drive and Reader on a newer style USB-C MacBook Pro. If you are offloading to SSDs this is going to impact your offload times, if using 5400rpm spinning disk drives then you won't see any speed difference between an older MacBook Pro and a newer MacBook Pro.</p>
+<p>One interesting point worth noting, there seems to be a fan somewhere in the Compact Drive Reader. When I was offloading footage I'd notice a fan come on from time to time. It's very distinct, you'll definitely hear it in a normal indoor environment. I suspect this is to help regulate the temperature of the Compact Drive so that it doesn't overheat.</p>
+<p>Initially I thought the Compact Drive may have had the fan which in some regards would make sense as it could cool itself both in-camera and in-reader, but there are no air vents on the Compact Drive so I suspect it's housing just acts as a heatsink. The Compact Drive Reader has what looks like a vent on the rear end. While I couldn't see a fan, I could definitely hear one, so I expect this may serve as air intake or exhaust.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexReader_03_large.jpg?v=1566784251" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h1 style="text-align: center;"><strong><span style="color: #000000;">WORKFLOW<br></span></strong></h1>
+<p>On this particular job we were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ. I actually would have liked to be shooting ARRIRAW on this one so I could have given Codex HDE a solid test run, but that wasn't the format of choice.</p>
+<h3><strong>.MXF FILE WRAPPER</strong></h3>
+<p>The most important thing to keep in mind when shooting ProRes on Alexa Mini LF is that it wraps ProRes in a .mxf wrapper as opposed to the .mov wrapper that you would be used to when working with a regular Alexa Mini. As you can see below, you have the .mxf ProRes Clips and the standard ARRI Metadata presented on the card.</p>
+<p><img src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexWorkflow_01_large.jpg?v=1566784791" alt="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Normally I would use Apple Quick Look or Quicktime Player to watch through the ProRes .mov Clips for quality control, when wrapped in .mxf neither of these worked. I ended up using <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank" title="DaVinci Resolve" rel="noopener noreferrer">DaVinci Resolve</a> to playback the clips. I tested a few other software packages for their compatibility with the files, <a href="https://www.adobe.com/au/products/premiere.html" target="_blank" title="Premiere Pro" rel="noopener noreferrer">Adobe Premiere Pro</a> worked, <a href="https://www.arri.com/en/learn-help/learn-help-camera-system/tools/arriraw-converter" target="_blank" title="ARRIRAW Converter" rel="noopener noreferrer">ARRIRAW Converter</a> worked, <a href="https://www.videolan.org/index.html" target="_blank" title="VLC" rel="noopener noreferrer">VLC</a> worked.</p>
+<p><strong>UPDATE:</strong><br>You can playback ProRes in a .mxf Wrapper in both Quick Look and QuickTime, you just need to tweak some software. Read more about it on <a href="how-do-i-playback-prores-mxf-files-from-the-alexa-mini-lf.html" target="_blank" title="How to Playback ProRes MXF Files" rel="noopener noreferrer">this blog post</a>.</p>
+<h3><strong>SOFTWARE</strong></h3>
+<p>In terms of software, you should make sure you have the newest version of <a href="https://codex.online/products/device-manager" target="_blank" title="Codex Device Manager" rel="noopener noreferrer">Codex Device Manager</a>. Recently they released V5 which is in BETA and provides compatibility for the Alexa Mini LF and <a href="https://codex.online/codex-hde" target="_blank" title="HDE" rel="noopener noreferrer">Codex HDE</a>.</p>
+<p>For this job I used <a href="https://pomfort.com/silverstack/" target="_blank" title="Silverstack" rel="noopener noreferrer">Pomfort Silverstack</a>. I did a few tests with an older version of Silverstack and a few tests with the latest version of Silverstack. As you can see in the images below, the old version of Silverstack didn't work too well with the Alexa Mini LF Footage. The clip names had a frame count added to the end, the thumbnails didn't work, the metadata didn't carry across, etc. This is because the old version of Silverstack doesn't know about the Alexa Mini LF and it's .mxf ProRes Format, thus it imports the clips as 'Generic Clips' without any of the bells and whistles that you would expect.</p>
+<p><strong>OLD VERSION OF SILVERSTACK</strong></p>
+<p style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexWorkflow_04_2048x2048.jpg?v=1566786277" style="float: none; display: block; margin-left: auto; margin-right: auto;"></p>
+<p><strong>LATEST VERSION OF SILVERSTACK</strong></p>
+<p style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexWorkflow_05_2048x2048.jpg?v=1566786278" style="float: none; display: block; margin-left: auto; margin-right: auto;"></p>
+<p>To amend this, run the latest version of Silverstack. As you can see above, thumbnails work, metadata has carried across and the filenames are presented as they should be. No matter which data management software you use, <a href="https://pomfort.com/silverstack/" target="_blank" title="Silverstack" rel="noopener noreferrer">Silverstack</a>, <a href="https://hedge.video/" target="_blank" title="Hedge" rel="noopener noreferrer">Hedge</a> or <a href="https://www.imagineproducts.com/product/shotput-pro" target="_blank" title="Shotput Pro" rel="noopener noreferrer">Shotput Pro</a>, make sure you are on the latest version.</p>
+<h3><strong>FORMATTING MAGS<br></strong></h3>
+<p>As part of my normal workflow, when I have backed up a mag and signed it all off I will format the mag before returning it to set. This means that when it is inserted into a camera, particularly an ARRI Camera, it will prompt you to format the mag prior to use. This is great as it leaves no room for error, if a card prompts you for a format when you do a reload you are doing the right thing, if you get no prompt perhaps something is wrong and requires a second look.</p>
+<p>The Alexa Mini LF fits into this workflow as you would expect. In Disk Utility you can see the 960GB Compact Drive which is formatted as UDF by the camera.</p>
+<p style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexWorkflow_02_grande.jpg?v=1566786268" style="display: block; margin-left: auto; margin-right: auto; float: none;"></p>
+<p>If you format it as MS-DOS (FAT) in Disk Utility, when inserted into the camera with the EVF open it will prompt you to format the mag, just like the regular Alexa Mini. Winning.</p>
+<p style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/2691/1130/files/CodexWorkflow_03_grande.jpg?v=1566786271" style="display: block; margin-left: auto; margin-right: auto; float: none;"></p>
+<h3 style="text-align: left;"><strong>DATA RATE<br></strong></h3>
+<p style="text-align: left;">One last note on workflow that will essentially make or break your job. Be aware of your shooting data rate and make sure you have fast enough drives. The Alexa Mini LF is very data hungry.</p>
+<p style="text-align: left;">We were shooting 4.5K Open Gate (4448 x 3096) in ProRes 444 XQ which allows for 46 Minutes Shooting Time at 25fps for 1TB of Data. This essentially means that for every 5 Mins you shoot, you have 128GB of data to offload.</p>
+<p style="text-align: left;">If you tackle this with 5400rpm spinning disk drives that 128GB will take around 40 Mins to offload. That means 5 Mins Shooting = 40 Mins Offloading, that's an 8:1 Ratio in terms of offload time to shooting time. You will very quickly get backlogged and wind up with a bunch of data overtime at the end of the day.</p>
+<p style="text-align: left;">For the Alexa Mini LF you really need to be offloading to SSDs or 5 Bay RAIDs that have a write speed of at least 420MB/s. If you don't you're asking for trouble.</p>
+<p style="text-align: left;">We shot some stuff at 33.333fps and 40fps at 4.5K Open Gate, this racks up the data super quick. We did a few short takes and I had 300GB to offload within a matter of minutes.</p>
+<p style="text-align: left;">To some it may seem counter intuitive to spend more money on drives but I assure you that the more you spend on faster drives (SSDs or Big RAIDs), the more you will save on labour, particularly in the form of overtime at the end of the day. Plan ahead and be prepared.</p>
+<h1 style="text-align: center;"><strong><span style="color: #000000;">CONCLUSION<br></span></strong></h1>
+<p>This was my first job with the Alexa Mini LF, it went smoothly with minimal fuss. There will be many more things to play with and test out going forward but I hope this helps to give a few of you a heads up when you get sent out with this camera for the first time.</p>
+<p>Thanks!</p>
+</div>
+
+
+<div align="center">
+  <!-- /snippets/social-sharing.liquid -->
+<div class="social-sharing">
+  
+  
+    <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://filmdrives.com/blogs/blog/on-set-with-the-alexa-mini-lf-first-impressions" class="btn btn--small btn--secondary btn--share share-facebook" title="Share on Facebook">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 20 20"><path fill="#444" d="M18.05.811q.439 0 .744.305t.305.744v16.637q0 .439-.305.744t-.744.305h-4.732v-7.221h2.415l.342-2.854h-2.757v-1.83q0-.659.293-1t1.073-.342h1.488V3.762q-.976-.098-2.171-.098-1.634 0-2.635.964t-1 2.72V9.47H7.951v2.854h2.415v7.221H1.413q-.439 0-.744-.305t-.305-.744V1.859q0-.439.305-.744T1.413.81H18.05z"/></svg>
+      <span class="share-title" aria-hidden="true">Share</span>
+      <span class="visually-hidden">Share on Facebook</span>
+    </a>
+  
+
+  
+    <a target="_blank" href="https://twitter.com/share?text=ON-SET%20WITH%20THE%20ALEXA%20MINI%20LF%20%7C%20FIRST%20IMPRESSIONS&amp;url=https://filmdrives.com/blogs/blog/on-set-with-the-alexa-mini-lf-first-impressions" class="btn btn--small btn--secondary btn--share share-twitter" title="Tweet on Twitter">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 20 20"><path fill="#444" d="M19.551 4.208q-.815 1.202-1.956 2.038 0 .082.02.255t.02.255q0 1.589-.469 3.179t-1.426 3.036-2.272 2.567-3.158 1.793-3.963.672q-3.301 0-6.031-1.773.571.041.937.041 2.751 0 4.911-1.671-1.284-.02-2.292-.784T2.456 11.85q.346.082.754.082.55 0 1.039-.163-1.365-.285-2.262-1.365T1.09 7.918v-.041q.774.408 1.773.448-.795-.53-1.263-1.396t-.469-1.864q0-1.019.509-1.997 1.487 1.854 3.596 2.924T9.81 7.184q-.143-.509-.143-.897 0-1.63 1.161-2.781t2.832-1.151q.815 0 1.569.326t1.284.917q1.345-.265 2.506-.958-.428 1.386-1.732 2.18 1.243-.163 2.262-.611z"/></svg>
+      <span class="share-title" aria-hidden="true">Tweet</span>
+      <span class="visually-hidden">Tweet on Twitter</span>
+    </a>
+  
+
+  
+    <a target="_blank" href="https://pinterest.com/pin/create/button/?url=https://filmdrives.com/blogs/blog/on-set-with-the-alexa-mini-lf-first-impressions&amp;media=//filmdrives.com/cdn/shop/articles/MiniLF_CoverPhoto_1024x1024.jpg?v=1566789476&amp;description=ON-SET%20WITH%20THE%20ALEXA%20MINI%20LF%20%7C%20FIRST%20IMPRESSIONS" class="btn btn--small btn--secondary btn--share share-pinterest" title="Pin on Pinterest">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pinterest" viewBox="0 0 20 20"><path fill="#444" d="M9.958.811q1.903 0 3.635.744t2.988 2 2 2.988.744 3.635q0 2.537-1.256 4.696t-3.415 3.415-4.696 1.256q-1.39 0-2.659-.366.707-1.147.951-2.025l.659-2.561q.244.463.903.817t1.39.354q1.464 0 2.622-.842t1.793-2.305.634-3.293q0-2.171-1.671-3.769t-4.257-1.598q-1.586 0-2.903.537T5.298 5.897 4.066 7.775t-.427 2.037q0 1.268.476 2.22t1.427 1.342q.171.073.293.012t.171-.232q.171-.61.195-.756.098-.268-.122-.512-.634-.707-.634-1.83 0-1.854 1.281-3.183t3.354-1.329q1.83 0 2.854 1t1.025 2.61q0 1.342-.366 2.476t-1.049 1.817-1.561.683q-.732 0-1.195-.537t-.293-1.269q.098-.342.256-.878t.268-.915.207-.817.098-.732q0-.61-.317-1t-.927-.39q-.756 0-1.269.695t-.512 1.744q0 .39.061.756t.134.537l.073.171q-1 4.342-1.22 5.098-.195.927-.146 2.171-2.513-1.122-4.062-3.44T.59 10.177q0-3.879 2.744-6.623T9.957.81z"/></svg>
+      <span class="share-title" aria-hidden="true">Pin it</span>
+      <span class="visually-hidden">Pin on Pinterest</span>
+    </a>
+  
+
+</div>
+
+  </div>
+
+
+
+</div>
+    </div>
+  </div>
+</article>
+
+
+
+<div class="text-center return-link-wrapper">
+  <a href="../blog.html" class="btn btn--secondary btn--has-icon-before return-link">
+    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 20 8"><path d="M4.814 7.555C3.95 6.61 3.2 5.893 2.568 5.4 1.937 4.91 1.341 4.544.781 4.303v-.44a9.933 9.933 0 0 0 1.875-1.196c.606-.485 1.328-1.196 2.168-2.134h.752c-.612 1.309-1.253 2.315-1.924 3.018H19.23v.986H3.652c.495.632.84 1.1 1.036 1.406.195.306.485.843.869 1.612h-.743z" fill="#000" fill-rule="evenodd"/></svg>
+    Back to BLOG
+  </a>
+</div>
+
+    </main>
+
+    <div id="shopify-section-footer" class="shopify-section">
+
+      
+    </div>
+
+    <div class="grid grid--no-gutters">
+      
+        <div class="grid__item text-center">
+          <ul class="list--inline site-footer__social-icons social-icons">
+            
+              <li>
+                <a class="social-icons__link" href="https://www.facebook.com/filmdrives" title="Film Drives on Facebook">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 20 20"><path fill="#444" d="M18.05.811q.439 0 .744.305t.305.744v16.637q0 .439-.305.744t-.744.305h-4.732v-7.221h2.415l.342-2.854h-2.757v-1.83q0-.659.293-1t1.073-.342h1.488V3.762q-.976-.098-2.171-.098-1.634 0-2.635.964t-1 2.72V9.47H7.951v2.854h2.415v7.221H1.413q-.439 0-.744-.305t-.305-.744V1.859q0-.439.305-.744T1.413.81H18.05z"/></svg>
+                  <span class="icon__fallback-text">Facebook</span>
+                </a>
+              </li>
+            
+            
+              <li>
+                <a class="social-icons__link" href="https://twitter.com/filmdrives" title="Film Drives on Twitter">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 20 20"><path fill="#444" d="M19.551 4.208q-.815 1.202-1.956 2.038 0 .082.02.255t.02.255q0 1.589-.469 3.179t-1.426 3.036-2.272 2.567-3.158 1.793-3.963.672q-3.301 0-6.031-1.773.571.041.937.041 2.751 0 4.911-1.671-1.284-.02-2.292-.784T2.456 11.85q.346.082.754.082.55 0 1.039-.163-1.365-.285-2.262-1.365T1.09 7.918v-.041q.774.408 1.773.448-.795-.53-1.263-1.396t-.469-1.864q0-1.019.509-1.997 1.487 1.854 3.596 2.924T9.81 7.184q-.143-.509-.143-.897 0-1.63 1.161-2.781t2.832-1.151q.815 0 1.569.326t1.284.917q1.345-.265 2.506-.958-.428 1.386-1.732 2.18 1.243-.163 2.262-.611z"/></svg>
+                  <span class="icon__fallback-text">Twitter</span>
+                </a>
+              </li>
+            
+            
+            
+              <li>
+                <a class="social-icons__link" href="https://www.instagram.com/filmdrives/" title="Film Drives on Instagram">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 512 512"><path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1-14 14-22.6 28.1-29.1 44.6-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6 14 14 28.1 22.6 44.6 29.1 16 6.2 34.3 10.5 61.2 11.7 26.9 1.2 35.4 1.5 103.9 1.5s77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1 14-14 22.6-28.1 29.1-44.6 6.2-16 10.5-34.3 11.7-61.2 1.2-26.9 1.5-35.4 1.5-103.9s-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6-14-14-28.1-22.6-44.6-29.1-16-6.2-34.3-10.5-61.2-11.7-27-1.1-35.6-1.4-104-1.4z"/><path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4zm0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84z"/><circle cx="390.5" cy="121.5" r="30.2"/></svg>
+                  <span class="icon__fallback-text">Instagram</span>
+                </a>
+              </li>
+            
+            
+            
+            
+            
+            
+              <li>
+                <a class="social-icons__link" href="../blog.atom">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-rss" viewBox="0 0 20 20"><path fill="#444" d="M5.903 16.586a2.489 2.489 0 1 1-4.977 0 2.489 2.489 0 0 1 4.977 0zM12.956 19.075H9.43c0-4.688-3.817-8.505-8.505-8.505V7.044c6.638 0 12.031 5.393 12.031 12.031z"/><path fill="#444" d="M15.445 19.075c0-8.028-6.493-14.52-14.52-14.52V.925c10.019 0 18.15 8.131 18.15 18.15h-3.63z"/></svg>
+                  <span class="icon__fallback-text">RSS</span>
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+      <footer class="site-footer" role="contentinfo">
+  <div class="page-width">
+    <div class="grid grid--no-gutters">
+      <div class="grid__item text-center">
+          <ul class="site-footer__linklist site-footer__linklist--center">
+            
+              <li class="site-footer__linklist-item">
+                <a href="../../pages/terms-and-conditions.html">TERMS AND CONDITIONS</a>
+              </li>
+            
+              <li class="site-footer__linklist-item">
+                <a href="../../pages/privacy-policy.html">PRIVACY POLICY</a>
+              </li>
+            
+              <li class="site-footer__linklist-item">
+                <a href="../../pages/refunds-policy.html">REFUND POLICY</a>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div class="grid__item text-center">
+      </div>
+
+      <div class="grid__item text-center">
+        <div class="site-footer__copyright">
+          
+          <small class="site-footer__copyright-content"> Copyright &copy; 2025 |  <a href="../../index.html" title="">Film Drives</a>  | All Rights Reserved.</small>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+
+</div>
+
+  </div>
+</html>
+ 
